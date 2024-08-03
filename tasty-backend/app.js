@@ -21,7 +21,7 @@ const menuItemSchema = new mongoose.Schema({
 const MenuItem = mongoose.model('MenuItem', menuItemSchema);
 
 // Routes
-app.get('/api/menu', async (req, res) => {
+app.get('/api/menu-items', async (req, res) => {
     try {
         const menuItems = await MenuItem.find();
         res.json(menuItems);
