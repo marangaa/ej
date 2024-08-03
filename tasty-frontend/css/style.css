@@ -24,6 +24,74 @@ body {
   }
 }
 
+.fh5co-item-card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.fh5co-item-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.fh5co-item-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.fh5co-item-card-content {
+  padding: 20px;
+}
+
+.fh5co-item-card-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.fh5co-item-card-content p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.fh5co-item-card-content .fh5co-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #337ab7;
+}
+
+.fh5co-item-link {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.fh5co-item-link:hover {
+  color: #23527c;
+}
+
+.animate-box {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.animate-box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.margin_top {
+  margin-top: 20px;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
